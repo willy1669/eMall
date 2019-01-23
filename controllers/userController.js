@@ -1,7 +1,7 @@
 const User = require('../models/User');
 const Joi = require('joi');
 const passwordHash = require('password-hash');
-const service = require('../services/UserService');
+const service = require('../services/userService');
 
 const schema = Joi.object().keys({
     username: Joi.string().min(3).max(30).required(),
