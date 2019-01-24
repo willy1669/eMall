@@ -32,3 +32,7 @@ Joi.validate({username:data.username, email:data.email, password:data.password},
         }
     });
 }
+
+function isValidPassword(user, password){
+    return passwordHash.verify(password, user.password);
+  }
