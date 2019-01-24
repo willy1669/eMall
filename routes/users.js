@@ -5,6 +5,7 @@ var userController = require('../controllers/UserControllers');
 
 /* GET users listing. */
 router.post('/create', userController.addUser);
+router.post('/login', userController.loginUser);
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
