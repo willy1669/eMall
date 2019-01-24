@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb://localhost:27017/eMall', { useNewUrlParser: true});
-mongoose.connect('mongodb://willy1662:personallY11@ds151393.mlab.com:51393/emall',{ useNewUrlParser: true} );
+mongoose.connect('mongodb://willy1669:lov123@ds217360.mlab.com:17360/electronicmall',{ useNewUrlParser: true} );
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
