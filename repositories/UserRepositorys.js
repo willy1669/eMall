@@ -1,5 +1,5 @@
 var model = require('../models/User');
-var BaseRepository = require('../repositorires/BaseRepository');
+var BaseRepository = require('../repositories/BaseRepository');
 
 function UserRepository(){
 
