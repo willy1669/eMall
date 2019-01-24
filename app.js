@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+app.set('port', (process.env.PORT || 5000))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb://localhost:27017/eMall', { useNewUrlParser: true});
-mongoose.connect('mongodb://willy1669:lov123@ds217360.mlab.com:17360/electronicmall',{ useNewUrlParser: true} );
+mongoose.connect('mongodb://willy1669:love123@ds217360.mlab.com:17360/electronicmall',{ useNewUrlParser: true} );
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
